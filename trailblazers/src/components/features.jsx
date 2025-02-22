@@ -1,56 +1,97 @@
+import { ShieldCheckIcon, BoltIcon, DevicePhoneMobileIcon } from "@heroicons/react/24/solid";
+
 const features = [
-    { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
-    { name: 'Material', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
-    { name: 'Dimensions', description: '6.25" x 3.55" x 1.15"' },
-    { name: 'Finish', description: 'Hand sanded and finished with natural oil' },
-    { name: 'Includes', description: 'Wood card tray and 3 refill packs' },
-    { name: 'Considerations', description: 'Made from natural materials. Grain and color vary with each item.' },
-  ]
-  
-  export default function Features() {
-    return (
-      <div className="bg-white">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Technical Specifications</h2>
-            <p className="mt-4 text-gray-500">
-              The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-              steel divider separates active cards from new ones, or can be used to archive important task lists.
-            </p>
-  
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-              {features.map((feature) => (
-                <div key={feature.name} className="border-t border-gray-200 pt-4">
-                  <dt className="font-medium text-gray-900">{feature.name}</dt>
-                  <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-            <img
-              alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-              src="https://tailwindui.com/plus-assets/img/ecommerce-images/product-feature-03-detail-01.jpg"
-              className="rounded-lg bg-gray-100"
-            />
-            <img
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
-              src="https://tailwindui.com/plus-assets/img/ecommerce-images/product-feature-03-detail-02.jpg"
-              className="rounded-lg bg-gray-100"
-            />
-            <img
-              alt="Side of walnut card tray with card groove and recessed card area."
-              src="https://tailwindui.com/plus-assets/img/ecommerce-images/product-feature-03-detail-03.jpg"
-              className="rounded-lg bg-gray-100"
-            />
-            <img
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              src="https://tailwindui.com/plus-assets/img/ecommerce-images/product-feature-03-detail-04.jpg"
-              className="rounded-lg bg-gray-100"
-            />
-          </div>
+  {
+    name: "1. Leadership Development",
+    description: [
+      "- Enhance leadership skills of young adults’ leaders and committees.",
+      "- Discover gifts and identify future leaders.",
+      "- Develop the gifts and leadership potential of individuals.",
+      "- Deploy and launch gifted leaders into key places of influence.",
+    ],
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: "2. Socio-economic Empowerment",
+    description: [
+      "- Create platforms that will address social issues affecting young people within PAOZ and young people in our communities.", 
+      "- Provide economic empowerment and build influential young people with skills to generate income and entrepreneur skills which will see them making an impact in our church and beyond."
+    ],
+    icon: BoltIcon,
+  },
+  {
+    name: "3. Networking",
+    description: [
+      "- Increase field visit and support amongst local churches, districts, provinces and regions.",
+      "- Fostering fellowship amongst our young adults from local churches, district, provinces and regions.",
+      "- The cross pollination of ideas and experiences in young adult’s ministry.",
+      "- Encourage"
+    ],
+    icon: DevicePhoneMobileIcon,
+  },
+  {
+    name: "4. College and University Ministry",
+    description: [
+      "- Establish vibrant ministries in colleges and universities.",
+      "- Offer practical, pastoral, spiritual and moral assistance to our PAOZ students based in these institutions.",
+      "- Retain the membership of our students within the PAOZ Family regardless of where they are doing their studies.",
+      "- Reach out to the lost students in a dynamic and relevant manner within the confines of our institutions of higher learning.",
+    ],
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: "5. Spiritual impact",
+    description: [
+      "- Nurture young people spiritually.", 
+      "- Foster spiritual growth in our young people.",
+      "- Raise a generation of young people who have a hunger and thirst for God .",
+      "- Build spiritually and doctrinally sound young people."
+    ],
+    icon: BoltIcon,
+  },
+  {
+    name: "6. Ministry Impact",
+    description: [
+      "- Improve the quality and relevance of local church ministry.",
+      "- To increase attendance and Participation of young adults in local meetings.",
+      "- Enhance the PAOZ Brand through various activities and fulfilment of the PAOZ vision.",
+      "- Encourage and expose our young people and help them realize their God given mandate.",
+      "- Launch young adult’s ministry in all our local churches. "
+    ],
+    icon: DevicePhoneMobileIcon,
+  },
+];
+
+const FeaturesSection = () => {
+  return (
+    <section className="bg-gray-100 py-16 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-base font-semibold text-orange-600">Core Values</h2>
+        <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
+          Ministry Pillars & Objectives
+          </p>
+        <p className="m-6 text-lg text-gray-600">
+          Dedicated to knowing Christ, sharing his message, and transforming lives.
+        </p>
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature) => (
+            <div
+              key={feature.name}
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 flex flex-col items-center text-center"
+            >
+              <feature.icon className="w-12 h-12 text-orange-600 mb-4" />
+              <h3 className="text-2xl font-bold text-gray-700 mb-3 text-left">{feature.name}</h3>
+              <ol className="text-gray-600  space-y-2">
+                {feature.description.map((item, index) => (
+                  <li key={index} className="mb-2 font-normal text-left">{item}</li>
+                ))}
+              </ol>
+            </div>
+          ))}
         </div>
       </div>
-    )
-  }
-  
+    </section>
+  );
+};
+
+export default FeaturesSection;

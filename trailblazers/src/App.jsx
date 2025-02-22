@@ -9,19 +9,23 @@ import VarsityOutreach from './components/varsity_outreach.jsx'
 import Gallery from './components/gallery.jsx'
 import Banner from './components/banners.jsx'
 import Testimonies from './components/testimonies.jsx'
+import AboutUs from './components/aboutus.jsx'
+import Features from './components/features.jsx'
 
 function App() {
   return (
     <>
      <Header/>
      <Hero/>
+     <AboutUs/>
+     <Features/>
      <Blog/>
      <Team/>
      <Logos/>
      <VarsityOutreach/>
      <Gallery/>
      <Banner/>
-     <Testimonies/>
+     <Testimonies/>     
     </>
   )
 }
