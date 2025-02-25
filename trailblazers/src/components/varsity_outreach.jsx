@@ -1,88 +1,97 @@
-const people = [
+const universityRepresentatives = {
+  "Harvard University": [
     {
-      name: 'Leslie Alexander',
-      email: 'leslie.alexander@example.com',
-      role: 'Co-Founder / CEO',
+      name: "Leslie Alexander",
+      phone_number: "leslie.alexander@example.com",
+      role: "Co-Founder / CEO",
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      lastSeen: '3h ago',
-      lastSeenDateTime: '2023-01-23T13:23Z',
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      lastSeen: "3h ago",
+      lastSeenDateTime: "2023-01-23T13:23Z",
     },
     {
-      name: 'Michael Foster',
-      email: 'michael.foster@example.com',
-      role: 'Co-Founder / CTO',
+      name: "Michael Foster",
+      phone_number: "michael.foster@example.com",
+      role: "Co-Founder / CTO",
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      lastSeen: '3h ago',
-      lastSeenDateTime: '2023-01-23T13:23Z',
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      lastSeen: "3h ago",
+      lastSeenDateTime: "2023-01-23T13:23Z",
     },
+  ],
+  "Stanford University": [
     {
-      name: 'Dries Vincent',
-      email: 'dries.vincent@example.com',
-      role: 'Business Relations',
+      name: "Dries Vincent",
+      phone_number: "dries.vincent@example.com",
+      role: "Business Relations",
       imageUrl:
-        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       lastSeen: null,
     },
     {
-      name: 'Lindsay Walton',
-      email: 'lindsay.walton@example.com',
-      role: 'Front-end Developer',
+      name: "Lindsay Walton",
+      phone_number: "lindsay.walton@example.com",
+      role: "Front-end Developer",
       imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      lastSeen: '3h ago',
-      lastSeenDateTime: '2023-01-23T13:23Z',
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      lastSeen: "3h ago",
+      lastSeenDateTime: "2023-01-23T13:23Z",
+    },
+  ],
+  "MIT": [
+    {
+      name: "Courtney Henry",
+      phone_number: "courtney.henry@example.com",
+      role: "Designer",
+      imageUrl:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      lastSeen: "3h ago",
+      lastSeenDateTime: "2023-01-23T13:23Z",
     },
     {
-      name: 'Courtney Henry',
-      email: 'courtney.henry@example.com',
-      role: 'Designer',
+      name: "Tom Cook",
+      phone_number: "tom.cook@example.com",
+      role: "Director of Product",
       imageUrl:
-        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      lastSeen: '3h ago',
-      lastSeenDateTime: '2023-01-23T13:23Z',
-    },
-    {
-      name: 'Tom Cook',
-      email: 'tom.cook@example.com',
-      role: 'Director of Product',
-      imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       lastSeen: null,
     },
-  ]
-  
-  export default function VarsityOutreach() {
-    return (
-      <ul role="list" className="divide-y divide-gray-100">
-        {people.map((person) => (
-          <li key={person.email} className="flex justify-between gap-x-6 py-5">
-            <div className="flex min-w-0 gap-x-4">
-              <img alt="" src={person.imageUrl} className="size-12 flex-none rounded-full bg-gray-50" />
-              <div className="min-w-0 flex-auto">
-                <p className="text-sm/6 font-semibold text-gray-900">{person.name}</p>
-                <p className="mt-1 truncate text-xs/5 text-gray-500">{person.email}</p>
-              </div>
-            </div>
-            <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-              <p className="text-sm/6 text-gray-900">{person.role}</p>
-              {person.lastSeen ? (
-                <p className="mt-1 text-xs/5 text-gray-500">
-                  Last seen <time dateTime={person.lastSeenDateTime}>{person.lastSeen}</time>
-                </p>
-              ) : (
-                <div className="mt-1 flex items-center gap-x-1.5">
-                  <div className="flex-none rounded-full bg-emerald-500/20 p-1">
-                    <div className="size-1.5 rounded-full bg-emerald-500" />
-                  </div>
-                  <p className="text-xs/5 text-gray-500">Online</p>
+  ],
+};
+
+export default function VarsityOutreach() {
+  return (
+    <div className="space-y-12">
+      {Object.entries(universityRepresentatives).map(([university, representatives]) => (
+        <div key={university}>
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">{university}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {representatives.map(({ name, phone_number, role, imageUrl, lastSeen, lastSeenDateTime }) => (
+              <div
+                key={phone_number}
+                className="flex flex-col items-center bg-white shadow-md rounded-2xl p-6 border border-gray-200"
+              >
+                <img alt={name} src={imageUrl} className="size-16 rounded-full bg-gray-50 mb-4" />
+                <h3 className="text-md font-semibold text-gray-900">{name}</h3>
+                <p className="text-sm text-gray-500">{role}</p>
+                <p className="text-xs text-gray-400 mt-1">{phone_number}</p>
+
+                <div className="mt-4">
+                  {lastSeen ? (
+                    <p className="text-xs text-gray-500">
+                      Last seen <time dateTime={lastSeenDateTime}>{lastSeen}</time>
+                    </p>
+                  ) : (
+                    <span className="text-xs font-medium text-green-700 bg-green-100 px-2 py-1 rounded-full">
+                      Online
+                    </span>
+                  )}
                 </div>
-              )}
-            </div>
-          </li>
-        ))}
-      </ul>
-    )
-  }
-  
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
