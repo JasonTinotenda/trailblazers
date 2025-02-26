@@ -1,4 +1,4 @@
-import { ShieldCheckIcon, BoltIcon, DevicePhoneMobileIcon } from "@heroicons/react/24/solid";
+import { ShieldCheckIcon, BoltIcon, DevicePhoneMobileIcon} from "@heroicons/react/24/solid";
 
 const features = [
   {
@@ -73,7 +73,7 @@ const FeaturesSection = () => {
         <p className="m-6 text-lg text-gray-600">
           Dedicated to knowing Christ, sharing his message, and transforming lives.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {features.map((feature) => (
             <div
               key={feature.name}

@@ -103,8 +103,11 @@ export default function Gallery({ autoplayDelay = 3000 }) {
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="text-base font-semibold text-orange-600">Our Gallery</h2>
-        <p className="mt-2 mb-6 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
-          Trailblazers in Pictures 
+        <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
+          Trailblazers in Pictures
+        </p>
+        <p className="mt-6 text-lg text-gray-600">
+          A collection of images from our various events and activities.
         </p>
 
         {isMobile ? (

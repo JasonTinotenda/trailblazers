@@ -38,9 +38,12 @@ export default function BulletinBoard() {
     <div className="bg-white py-16 sm:py-8 relative">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-xl font-bold text-red-700">Announcements</h2>
-          <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-700 sm:text-5xl">
-            Upcoming Events & Notices
+          <h2 className="text-base font-semibold text-orange-600">Upcomming Events</h2>
+          <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
+            Announcements & Notices
+          </p>
+          <p className="mt-6 text-lg text-gray-600">
+            Stay up-to-date with our latest events and trailblazers initiatives.
           </p>
         </div>
         <div className="hidden sm:grid sm:grid-cols-3 gap-x-8 gap-y-16 border-t border-gray-300 pt-10">
@@ -100,7 +103,7 @@ export default function BulletinBoard() {
                 <h3 className="text-sm font-medium text-gray-900">Details</h3>
                 <p className="mt-2 text-sm text-gray-600">{selectedEvent.details}</p>
               </div>
-              <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Book</button>
+              <button className=" mt-6 w-full bg-gray-400 text-white py-2 rounded-lg cursor-not-allowed opacity-50">Book</button>
             </DialogPanel>
           </div>
         </Dialog>
