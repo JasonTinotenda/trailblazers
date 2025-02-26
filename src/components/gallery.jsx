@@ -70,7 +70,7 @@ const ImageLoader = () => (
 );
 
 // eslint-disable-next-line react/prop-types
-export default function Gallery({ autoplayDelay = 3000 }) {
+export default function Gallery({ autoplayDelay = 5000 }) {
   const isMobile = useMediaQuery('(max-width: 1024px)');
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
@@ -101,12 +101,12 @@ export default function Gallery({ autoplayDelay = 3000 }) {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:my-0 sm:py-8 lg:max-w-7xl lg:px-8">
         <h2 className="text-base font-semibold text-orange-600">Our Gallery</h2>
         <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-600 sm:text-5xl">
           Trailblazers in Pictures
         </p>
-        <p className="mt-6 text-lg text-gray-600">
+        <p className="m-6 text-lg text-gray-600">
           A collection of images from our various events and activities.
         </p>
 

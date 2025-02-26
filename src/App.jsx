@@ -8,10 +8,9 @@ import Testimonies from './components/testimonies.jsx'
 import AboutUs from './components/aboutus.jsx'
 import Features from './components/features.jsx'
 import BulletinBoard from './components/bulletin_board.jsx'
-import Banner from './components/banners.jsx'
 import Footer from './components/footer.jsx'
 import Faq from './components/faq.jsx'
-import Team from './components/team.jsx'
+import NewsLetter from './components/newsletter.jsx'
 
 function App() {
   return (
@@ -23,10 +22,9 @@ function App() {
      <BulletinBoard/>   
      <Gallery/>     
      <Testimonies/>  
-     <Blog/>   
-     <Banner/>
-     <Team/>  
-     <Faq/>  
+     <Blog/> 
+     <NewsLetter/> 
+     <Faq/>       
      <Footer/> 
     </>
   )

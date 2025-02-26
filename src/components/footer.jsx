@@ -38,7 +38,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-orange-50 shadow-sm border-t border-gray-200 pb-4">
+    <footer className="bg-white shadow-sm border-t border-gray-200 pb-4">
       <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         <div>
           <Link href="#" className="flex items-center space-x-2">
