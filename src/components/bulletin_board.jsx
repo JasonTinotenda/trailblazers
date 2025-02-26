@@ -21,6 +21,40 @@ const events = [
     ],
     details: 'Help us make a difference by participating in a community-wide cleanup effort. Bring gloves and trash bags.',
   },
+  {
+    id: 1,
+    title: 'Community Cleanup Drive',
+    href: '#',
+    imageUrl: eventImage,
+    description:
+      'Join us for a community cleanup drive to keep our neighborhood clean and green. Volunteers needed!',
+    date: 'April 12, 2025',
+    datetime: '2025-04-12',
+    category: { title: 'Community Service', href: '#' },
+    highlights: [
+      'Eco-friendly initiative',
+      'Meet fellow community members',
+      'Refreshments provided',
+    ],
+    details: 'Help us make a difference by participating in a community-wide cleanup effort. Bring gloves and trash bags.',
+  },
+  {
+    id: 1,
+    title: 'Community Cleanup Drive',
+    href: '#',
+    imageUrl: eventImage,
+    description:
+      'Join us for a community cleanup drive to keep our neighborhood clean and green. Volunteers needed!',
+    date: 'April 12, 2025',
+    datetime: '2025-04-12',
+    category: { title: 'Community Service', href: '#' },
+    highlights: [
+      'Eco-friendly initiative',
+      'Meet fellow community members',
+      'Refreshments provided',
+    ],
+    details: 'Help us make a difference by participating in a community-wide cleanup effort. Bring gloves and trash bags.',
+  },
 ];
 
 export default function BulletinBoard() {
