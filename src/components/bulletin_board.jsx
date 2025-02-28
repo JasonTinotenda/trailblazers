@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import eventImage from '../assets/image01.jpg';
+import eventImage from '../assets/image01.jpeg';
 
 const events = [
   {

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import image01 from '../assets/image01.jpg';
+import image01 from '../assets/image01.jpeg';
 
 const posts = [
   {

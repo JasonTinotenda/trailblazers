@@ -7,22 +7,22 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import ContentLoader from 'react-content-loader';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import image01 from '../assets/image01.jpg';
+import image01 from '../assets/image01.jpeg';
 import image02 from '../assets/image02.jpg';
-import image03 from '../assets/image03.jpg';
-import image04 from '../assets/image04.jpg';
-import image05 from '../assets/image05.jpg';
-import image06 from '../assets/image06.jpg';
-import image07 from '../assets/image07.jpg';
-import image08 from '../assets/image08.jpg';
-import image09 from '../assets/image09.jpg';
-import image10 from '../assets/image10.jpg';
-import image11 from '../assets/image11.jpg';
-import image12 from '../assets/image12.jpg';
-import image13 from '../assets/image13.jpg';
-import image14 from '../assets/image14.jpg';
-import image15 from '../assets/image15.jpg';
-import image16 from '../assets/image16.jpg';
+import image03 from '../assets/image03.jpeg';
+import image04 from '../assets/image04.jpeg';
+import image05 from '../assets/image05.jpeg';
+import image06 from '../assets/image06.jpeg';
+import image07 from '../assets/image07.jpeg';
+import image08 from '../assets/image08.jpeg';
+import image09 from '../assets/image09.jpeg';
+import image10 from '../assets/image10.jpeg';
+import image11 from '../assets/image11.jpeg';
+import image12 from '../assets/image12.jpeg';
+import image13 from '../assets/image13.jpeg';
+import image14 from '../assets/image14.jpeg';
+import image15 from '../assets/image15.jpeg';
+import image16 from '../assets/image16.jpeg';
 
 const images = [
   { id: 1, imageSrc: image01 },

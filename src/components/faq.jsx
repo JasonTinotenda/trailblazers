@@ -15,21 +15,19 @@ export class Faq extends Component {
                 <div className="mb-10">
                   <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 ">
                     <QuestionMarkCircleIcon className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 " />
-                    What do you mean by "Figma assets"?
+                    What is the trailblazers ministry?
                   </h3>
                   <p className="text-gray-500 ">
-                    You will have access to download the full Figma project including all of the pages, the components,
-                    responsive pages, and also the icons, illustrations, and images included in the screens.
+                    The trailblazers ministry is a community for individuals (13 - marriage) to grow in their faith, build relationships, and serve together.
                   </p>
                 </div>
                 <div className="mb-10">
                   <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 ">
                     <QuestionMarkCircleIcon className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 " />
-                    What does "lifetime access" exactly mean?
+                    Do I have to be a member of the church to attend?
                   </h3>
                   <p className="text-gray-500 ">
-                    Once you have purchased either the design, code, or both packages, you will have access to all of
-                    the future updates based on the roadmap, free of charge.
+                    No! Everyone is welcome, whether you are a church member or just looking to connect.
                   </p>
                 </div>
               </div>
@@ -37,25 +35,19 @@ export class Faq extends Component {
                 <div className="mb-10">
                   <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 ">
                     <QuestionMarkCircleIcon className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 " />
-                    What does "free updates" include?
+                    Do I need to know a lot about the Bible to join?
                   </h3>
                   <p className="text-gray-500 ">
-                    The free updates that will be provided are based on the{' '}
-                    <a href="#" className="font-medium underline text-primary-600  hover:no-underline">
-                      roadmap
-                    </a>{' '}
-                    that we have laid out for this project. It is also possible that we will provide extra updates
-                    outside of the roadmap as well.
+                    Not at all! Our group is open to all, whether you're new to faith or have been following Christ for years.
                   </p>
                 </div>
                 <div className="mb-10">
                   <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 ">
                     <QuestionMarkCircleIcon className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 " />
-                    Can I use Windster in open-source projects?
+                    What topics do you study?
                   </h3>
                   <p className="text-gray-500 ">
-                    Generally, it is accepted to use Windster in open-source projects, as long as it is not a UI library,
-                    a theme, a template, or a page-builder that would be considered an alternative to Windster itself.
+                    We cover various topics, including books of the Bible, Christian living, relationships, and faith in everyday life.
                   </p>
                 </div>
               </div>

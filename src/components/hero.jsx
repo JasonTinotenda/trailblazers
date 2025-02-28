@@ -1,4 +1,4 @@
-import wallpaper from '../assets/wallpaper05.jpg';
+import wallpaper from '../assets/wallpaper05.jpeg';
 
 const links = [
   { name: 'Mentorship Programs', href: '#' },

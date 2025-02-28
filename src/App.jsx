@@ -1,33 +1,29 @@
-
-import './App.css'
-import Header from './components/header.jsx'
-import Hero from './components/hero.jsx'
-import Blog from './components/blog_feature.jsx'
-import Gallery from './components/gallery.jsx'
-import Testimonies from './components/testimonies.jsx'
-import AboutUs from './components/aboutus.jsx'
-import Features from './components/features.jsx'
-import BulletinBoard from './components/bulletin_board.jsx'
-import Footer from './components/footer.jsx'
-import Faq from './components/faq.jsx'
-import NewsLetter from './components/newsletter.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PageLayout from './layout/pagelayout'; // Adjust path as needed
+import HomePage from './pages/home';
+import AboutPage from './pages/aboutus';
+import MinistriesPage from './pages/ministries';
+import ResourcesPage from './pages/resources';
+import ContactPage from './pages/contact';
+import NotFoundPage from './pages/404';
+import './App.css';
 
 function App() {
   return (
-    <>
-     <Header/>
-     <Hero/>
-     <AboutUs/>
-     <Features/>
-     <BulletinBoard/>   
-     <Gallery/>     
-     <Testimonies/>  
-     <Blog/> 
-     <NewsLetter/> 
-     <Faq/>       
-     <Footer/> 
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        {/* Apply PageLayout to all pages */}
+        <Route path="/" element={<PageLayout />}>
+          <Route index element={<HomePage />} />          
+          <Route path="about" element={<AboutPage />} />
+          <Route path="ministries" element={<MinistriesPage />} />
+          <Route path="resources" element={<ResourcesPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />} /> {/* 404 page */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
